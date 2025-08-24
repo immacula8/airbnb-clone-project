@@ -93,3 +93,23 @@ The database is designed to model the relationships between users, properties, a
 - **Relationships**:  
   - A payment is linked to one booking.  
   - Each booking can have one payment record.
+
+## Feature Breakdown
+
+### User Management
+Users can register, log in, and manage their profiles. Hosts and guests have different roles, enabling them to either list properties or make bookings. Authentication and authorization ensure secure access.
+
+### Property Management
+Hosts can create, update, and delete property listings. Each property includes details such as location, price per night, and availability. This feature makes it possible for guests to browse and find accommodations.
+
+### Booking System
+Guests can book properties by selecting available dates and submitting a reservation. The system prevents double-booking and keeps track of each booking’s status (pending, confirmed, canceled). This ensures smooth and reliable reservations.
+
+### Review System
+Guests can leave ratings and comments on properties they have stayed in. Reviews help future guests make informed decisions and encourage hosts to maintain high-quality listings.
+
+### Payment Integration
+The platform allows guests to securely pay for bookings using different payment methods. Payment tracking ensures that bookings are confirmed only after successful transactions. This provides financial accountability between hosts and guests.
+
+### Search and Filtering
+Guests can search for properties using filters such as location, price range, and amenities. This feature improves the user experience by making it easier to find suitable accommodations quickly.
