@@ -56,3 +56,40 @@ The Airbnb Clone project leverages modern technologies to build a scalable and s
 
 - **Nginx**  
   A web server and reverse proxy used to handle incoming requests, improve performance, and enhance security.
+
+## Database Design
+
+The database is designed to model the relationships between users, properties, and bookings in the Airbnb Clone system. Below are the key entities:
+
+### Users
+- **Fields**: `id`, `name`, `email`, `password`, `role` (guest/host/admin)  
+- **Relationships**:  
+  - A user can list multiple properties (if host).  
+  - A user can make multiple bookings (if guest).  
+  - A user can leave reviews for properties.
+
+### Properties
+- **Fields**: `id`, `title`, `description`, `location`, `price_per_night`, `host_id`  
+- **Relationships**:  
+  - A property belongs to one host (user).  
+  - A property can have multiple bookings.  
+  - A property can receive multiple reviews.
+
+### Bookings
+- **Fields**: `id`, `property_id`, `user_id`, `check_in_date`, `check_out_date`, `status`  
+- **Relationships**:  
+  - A booking is linked to one property.  
+  - A booking is made by one user.  
+  - A booking may be associated with a payment.
+
+### Reviews
+- **Fields**: `id`, `property_id`, `user_id`, `rating`, `comment`, `created_at`  
+- **Relationships**:  
+  - A review belongs to one property.  
+  - A review is written by one user.
+
+### Payments
+- **Fields**: `id`, `booking_id`, `amount`, `payment_method`, `status`, `transaction_date`  
+- **Relationships**:  
+  - A payment is linked to one booking.  
+  - Each booking can have one payment record.
