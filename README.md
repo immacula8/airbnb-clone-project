@@ -30,3 +30,29 @@ A successful project like the Airbnb Clone requires collaboration across differe
 
 - **Security Engineer**  
   Implements and monitors security measures, including API protection, authentication, and data encryption, to keep the system safe from vulnerabilities.
+
+
+  ## Technology Stack
+
+The Airbnb Clone project leverages modern technologies to build a scalable and secure booking platform. Each tool plays a specific role in the system’s architecture:
+
+- **Django**  
+  A high-level Python web framework used to build the core application logic, handle user authentication, and provide a robust backend for APIs.
+
+- **PostgreSQL**  
+  A powerful relational database used to store and manage application data such as users, bookings, and property listings, with strong support for scalability and reliability.
+
+- **GraphQL**  
+  An API query language that allows clients to request exactly the data they need, improving efficiency compared to traditional REST APIs.
+
+- **Git & GitHub**  
+  Version control and collaboration tools that enable team members to track changes, manage branches, and work together seamlessly.
+
+- **Docker**  
+  Provides containerization to ensure the application runs consistently across different environments, simplifying deployment and scaling.
+
+- **CI/CD Pipelines**  
+  Automates testing, building, and deployment processes, ensuring that new updates are delivered quickly and reliably.
+
+- **Nginx**  
+  A web server and reverse proxy used to handle incoming requests, improve performance, and enhance security.
