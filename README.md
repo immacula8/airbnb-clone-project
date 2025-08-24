@@ -132,3 +132,17 @@ API requests will be limited per user or IP to prevent abuse such as denial-of-s
 
 ### Input Validation
 All incoming data will be validated and sanitized to prevent att
+
+## CI/CD Pipeline
+
+A **CI/CD (Continuous Integration and Continuous Deployment)** pipeline is a set of automated processes that help developers deliver code changes quickly and reliably.  
+
+- **Continuous Integration (CI):** Ensures that whenever developers push code, it is automatically tested and validated. This helps catch bugs early and maintain code quality.  
+- **Continuous Deployment (CD):** Automates the release of tested code into production, making the process faster, more consistent, and less error-prone.  
+
+### Importance for the Project
+Implementing a CI/CD pipeline ensures that:  
+- Code is always tested before being merged, reducing bugs.  
+- New features and fixes are delivered faster.  
+- The system remains stable while supporting continuous updates.  
+- Developers can collaborate efficiently w
