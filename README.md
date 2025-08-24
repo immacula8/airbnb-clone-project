@@ -113,3 +113,22 @@ The platform allows guests to securely pay for bookings using different payment 
 
 ### Search and Filtering
 Guests can search for properties using filters such as location, price range, and amenities. This feature improves the user experience by making it easier to find suitable accommodations quickly.
+
+## API Security
+
+Securing the backend APIs is critical to protect sensitive user data and maintain trust in the platform. Below are the key security measures that will be implemented:
+
+### Authentication
+Only registered users can access protected endpoints through secure login (e.g., JWT or session-based authentication). This ensures that every request is tied to a verified identity and prevents unauthorized access.
+
+### Authorization
+Different roles (e.g., guest, host, admin) have different permissions. Authorization ensures that users can only perform actions they are allowed to, such as hosts managing properties while guests book them. This prevents misuse of the system.
+
+### Data Protection
+Sensitive data such as passwords will be hashed, and payment details secured using encryption. Protecting data ensures privacy and compliance with security standards.
+
+### Rate Limiting
+API requests will be limited per user or IP to prevent abuse such as denial-of-service (DoS) attacks or brute-force login attempts. This keeps the system stable and reliable.
+
+### Input Validation
+All incoming data will be validated and sanitized to prevent att
